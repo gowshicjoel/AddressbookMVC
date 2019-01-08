@@ -41,9 +41,13 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_email;
         
     }
-      public javax.swing.JTextField getAddressField()
+      /**
+     *
+     * @return
+     */
+    public javax.swing.JTextField getAddressField()
       {
-          return (JTextField) txt_address;
+          return  txt_add;
       }
       public void setName(String name)
       {
@@ -57,9 +61,10 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_email.setText(email);
       }
-        public void setAddress (String address)
+       
+    public void setAddress(String address)
         {
-            txt_address.setText(address);
+           txt_add.setText(address);
         }
         public JComponent getComponent() 
         {
@@ -82,7 +87,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_mobileno = new javax.swing.JTextField();
         txt_email = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_add = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 102, 102));
 
@@ -100,6 +105,13 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         jLabel4.setText("Address");
 
+        txt_add.setName(""); // NOI18N
+        txt_add.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_addActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -116,7 +128,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_name)
                     .addComponent(txt_mobileno)
                     .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
+                    .addComponent(txt_add))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -137,16 +149,21 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(18, Short.MAX_VALUE))
+                    .addComponent(txt_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txt_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_addActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_addActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txt_add;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;

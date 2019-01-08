@@ -58,7 +58,7 @@ public class NameListPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         contactList = new javax.swing.JList<String>();
 
-        setBackground(new java.awt.Color(255, 0, 0));
+        setBackground(new java.awt.Color(255, 51, 51));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
