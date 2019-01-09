@@ -123,6 +123,7 @@ public class AddressBookDAOImplementation implements AddressBookDAO{
     public void getSelectedName(DetailViewPanel detailPanel,String selectedName)
     {
         try {
+            System.out.println("in GetSelectedName");
             conn = DBConnection.getInstance().getConnect();
             Statement stmt;
             stmt = conn.createStatement();

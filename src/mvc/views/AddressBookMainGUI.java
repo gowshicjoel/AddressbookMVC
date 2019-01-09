@@ -10,6 +10,7 @@ package mvc.views;
 //import mvc.controller.AddressBookController;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 //import java.awt.Component;
 import java.awt.GridLayout;
 //import java.awt.event.ActionEvent;
@@ -33,6 +34,7 @@ public class AddressBookMainGUI {
     private JButton btn_add;
     private JButton btn_edit;
     private JButton btn_delete;
+    private JButton btn_Search;
     private JPanel panel_btn;
     
     
@@ -42,7 +44,7 @@ public class AddressBookMainGUI {
      
   
         
-    public AddressBookMainGUI(String text){
+    public AddressBookMainGUI(String text, JButton btn_search){
         frame = new JFrame("Address Book");
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -88,8 +90,17 @@ public class AddressBookMainGUI {
         btn_delete = new JButton("Delete");
         panel_btn.add(btn_delete);
         
+        btn_search = new JButton("Search");
+         panel_btn.add(btn_search);
+        
         frame.getContentPane().add(panel_btn,BorderLayout.SOUTH);
     }
+
+    public AddressBookMainGUI(String view) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
     
     public NameListPanel getNameListPanel()
     {
@@ -141,5 +152,9 @@ public class AddressBookMainGUI {
             namesJList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
   }
     */
+
+    public Object getSearch() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

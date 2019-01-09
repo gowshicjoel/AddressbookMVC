@@ -64,7 +64,7 @@ public class AddressBookController {
         view.getAdd().addActionListener(actionListener);
         view.getDelete().addActionListener(actionListener);
         view.getEdit().addActionListener(actionListener);
-      
+      view.getSearch().addActionListener(actionListener);
     }
     
     
@@ -147,7 +147,8 @@ public class AddressBookController {
         boolean valid = false;
         String name = contactDetailsPanel.getNameField().getText();
         String mobile = contactDetailsPanel.getMobileField().getText();
-        if (name==null||name.equals("")||(mobile==null||mobile.equals("")))
+        String address = contactDetailsPanel.getAddressField().getText();
+        if (name==null||name.equals("")||(mobile==null||mobile.equals(""))||(address==null||address.equals("")))
             JOptionPane.showMessageDialog(new JFrame(), "Fields Marked as * are Mandatory","Inane error", JOptionPane.ERROR_MESSAGE);
         else 
             valid = true;

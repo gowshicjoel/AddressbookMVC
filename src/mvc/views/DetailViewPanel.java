@@ -90,6 +90,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_add = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 102, 102));
+        setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 255, 255)));
 
         jLabel1.setText("Name*");
 
@@ -103,7 +104,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         txt_email.setName("txt_email"); // NOI18N
 
-        jLabel4.setText("Address");
+        jLabel4.setText("Address*");
 
         txt_add.setName(""); // NOI18N
         txt_add.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +130,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_mobileno)
                     .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
                     .addComponent(txt_add))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,7 +151,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(txt_add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

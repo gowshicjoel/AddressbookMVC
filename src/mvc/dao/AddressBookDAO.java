@@ -18,5 +18,10 @@ public interface AddressBookDAO {
     public void updatePerson(Person person,String name);
     public DefaultListModel getAllNames(NameListPanel namepanel);
     public void getSelectedName(DetailViewPanel detailPanel,String selectedName);
-    
+    /**
+     *
+     * @param person
+     * @param name
+     */
+    public void searchPerson(Person person,String name);
 }
